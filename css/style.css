@@ -10,7 +10,8 @@ body {
  }
 
 .column-left {
-    background-color: black;
+    background-image: url("../img/leef.avif");
+    background-size: cover;
     width: 37%;
   }
 .column-right { 
