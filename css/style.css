@@ -44,26 +44,43 @@ body {
 
   }
   .row-two {
-    background-color: white;
-    height: 30%;
+    height: 65%;
     width: 100%;
 
   } 
-  .row-three {
-    background-color: rgb(243 244 246);
-    height: 35%;
-    width: 100%;
-
-  }
-
-   .create_account_form {
+  .create_account_form {
     background-color: black;
     height: 100%;
     width: 100%;
-    margin: 2rem auto;
+    
+  }
+  .form-row-one {
+    background-color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 5%;
+    width: 20%;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+
+  } 
+  .form-row-two {
+    background-color: white;
+    height: 41%;
+    width: 100%;
+
+  } 
+  .form-row-three {
+    background-color: rgb(243 244 246);
+    height: 54%;
+    width: 100%;
 
   }
+
+
   input {
+    display: block;
     height: 35px;
     width: 200px;
   }
