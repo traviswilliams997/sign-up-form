@@ -37,9 +37,6 @@ body {
     margin-left: 50px;
     margin-bottom: 40px;
     width: 75%;
-
-    
-
   }
   .paragraph-two {
     margin-left: 50px;
@@ -57,4 +54,22 @@ body {
     height: 35%;
     width: 100%;
 
-  } 
+  }
+
+   .create_account_form {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    margin: 2rem auto;
+
+  }
+  input {
+    height: 35px;
+    width: 200px;
+  }
+  label {
+    display: block;
+    height: 20px;
+    width: 200px;
+  }
+  
