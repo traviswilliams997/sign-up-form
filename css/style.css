@@ -1,8 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    box-sizing: border-box;
   }
 body {
     display: flex;
@@ -16,62 +17,94 @@ body {
     width: 37%;
   }
 .column-right { 
+    display: flex;
+    flex-direction: column;
+
     width: 73%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+   
   }
   .column-right .section-one {
-    background-color: rgb(243 244 246);
     display: flex;
     flex-direction: column;
-    height: 35%;
-    width: 100%;
+
+    background-color: rgb(243 244 246);
     color: black;
+ 
     font-weight: bold ;
     font-size: 2.5rem ;
     overflow: hidden;
 
+    height: 35%;
+    width: 100%;
+   
+
   }
  
   .column-right .section-one .paragraph-one {
+    width: 75%;
+
     margin-top: 200px;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-bottom: 40px;
-    width: 75%;
   }
+  
   .column-right .section-one .paragraph-two {
-    margin-left: 50px;
     width: 75%;
 
-  }
-  .column-right .section-two {
-    height: 65%;
-    width: 100%;
+    margin-left: 100px;
 
-  } 
+
+  }
+  
   form {
-    height: 100%;
+    height: 65%;
     width: 100%;
     
   }
   form .title {
     background-color: white;
-    font-size: 2rem;
+
+    font-size: 2.5rem;
     font-weight: bold;
+
     height: 5%;
     width: 20%;
+
     margin-top: 40px;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-bottom: 15px;
+ 
 
   } 
   form .user-details {
-    background-color: white;
-    height: 41%;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
 
-  } 
+    background-color: white;
+    
+    height: 41%;
+    width: 80%;
+
+    margin-left: 100px;
+
+  }
+  form .user-details .input-group {
+    display: flex;
+    width: 1200px;
+
+ 
+
+ }
+
+  form .user-details .label-input {
+     height: auto;
+     width: auto;
+     margin-right: 50px;;
+
+  }
+
+ 
   form .create-login {
     display: flow-root; /* Creates new fornatting context which fixes collapsing margin issue*/
     background-color: rgb(243 244 246);
@@ -82,13 +115,18 @@ body {
 
   input {
     display: block;
-    height: 35px;
-    width: 200px;
+    font-size: 2rem;
+    height: 60px;
+    width: 450px;
+    border-radius: 5px;
+
   }
   label {
     display: block;
+    color: gray;
+    font-weight: 800;
     height: 20px;
-    width: 200px;
+    width: 450px;
   }
 
   input[type='submit'] {
@@ -99,13 +137,13 @@ body {
     height: auto;
     width: auto;
 
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
 
     padding: 15px 60px; 
     border-radius: .5rem;
 
-    margin-left: 50px;
+    margin-left: 100px;
     margin-top: 40px;
 
     cursor: pointer ;
@@ -113,12 +151,14 @@ body {
   }
 
   input[type='submit']:hover {
+  
     font-weight: bolder;
     box-shadow:  0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 
   } 
 
   input[type='submit']:focus {
+    
     font-weight: bolder;
     box-shadow:  0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     background-color:  rgb(78, 108, 80); 
