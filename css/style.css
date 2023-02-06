@@ -6,26 +6,28 @@
     box-sizing: border-box;
   }
 body {
-    display: flex;
-    font-family: "Helvetica", "Arial", sans-serif;
-
- }
-
+      display: flex;
+      font-family: "Helvetica", "Arial", sans-serif;
+    }
+/* HERO PICTURE */
 .column-left {
     background-image: url("../img/leef.avif");
     background-size: cover;
     width: 37%;
-  }
+}
+
+/* SALES PITCH AND FORM */
 .column-right { 
     display: flex;
     flex-direction: column;
 
     width: 73%;
     height: 100%;
-   
-  }
-  .column-right .section-one {
-    display: flex;
+}
+
+  /* SALES PITCH */
+.column-right .section-one {
+   display: flex;
     flex-direction: column;
 
     background-color: rgb(243 244 246);
@@ -38,11 +40,9 @@ body {
     height: 35%;
     width: 100%;
     min-height: 35%;
-   
-
-  }
+}
  
-  .column-right .section-one .paragraph-one {
+.column-right .section-one .paragraph-one {
     width: 75%;
 
     margin-top: 200px;
@@ -50,25 +50,26 @@ body {
     margin-bottom: 40px;
   }
   
-  .column-right .section-one .paragraph-two {
+.column-right .section-one .paragraph-two {
     width: 75%;
 
     margin-left: 100px;
-
-
   }
-  
-  form {
+
+  /* FORM  */
+
+form {
     height: 65%;
     min-height: 65%;
-    width: 100%;
-    
+    width: 100%;  
   }
-  form .title {
+
+form .title {
     background-color: white;
 
     font-size: 2.5rem;
     font-weight: bold;
+    overflow: hidden;
 
     height: 5%;
     width: 20%;
@@ -76,12 +77,9 @@ body {
     margin-top: 40px;
     margin-left: 100px;
     margin-bottom: 15px;    
-    
-    overflow: hidden;
- 
-
   } 
-  form .user-details {
+
+form .user-details {
     display: flex;
     flex-direction: column;
 
@@ -91,40 +89,60 @@ body {
     width: 80%;
 
     margin-left: 100px;
-
   }
-  form .user-details .input-group {
+
+form .user-details .input-group {
     display: flex;
+    
     width: 1200px;
-
- 
-
  }
 
-  form .user-details .label-input {
+form .user-details .label-input {
      height: auto;
      width: auto;
      margin-right: 50px;;
-
   }
 
  
-  form .create-login {
+form .create-login {
     display: flow-root; /* Creates new fornatting context which fixes collapsing margin issue*/
+
     background-color: rgb(243 244 246);
+
     height: 54%;
     width: 100%;
-
   }
 
-  input {
+input {
     display: block;
+
     font-size: 2rem;
+
     height: 60px;
     width: 450px;
+
     border-radius: 5px;
 
   }
+
+input:focus{
+    border: 3px solid rgb(0, 89, 255);
+    box-shadow:  2px 2px 2px 2px rgb(202, 202, 202);
+  }
+input:valid{
+    border-color: rgb(193, 214, 153); 
+    background-color: rgb(215, 231, 183);
+  }
+
+input:not(:placeholder-shown):not(:focus):invalid {
+    border-color: red;
+    background-color: rgb(248, 196, 196); 
+}
+  input::placeholder {
+   padding-left: 5px;
+    
+  }
+
   label {
     display: block;
     color: gray;
