@@ -74,13 +74,15 @@ body {
 
 .column-left .section-two p{
   position: absolute;
-  bottom: 0px;
+  bottom: 15px;
 
   height: auto;
   width: auto;
 
   font-size: 1.5rem;
   color: white;
+
+  opacity: 0.8;
 
 
 
@@ -186,7 +188,8 @@ form .create-login {
 
   form .create-login  p{
      font-size: 1.5rem;
-     
+     height: auto;
+     width: auto;
      margin-top: 50px;
      margin-left: 100px;
  
