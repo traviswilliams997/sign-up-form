@@ -15,6 +15,49 @@ body {
     background-size: cover;
     width: 37%;
 }
+.column-left .container{
+  position: relative;
+  
+  height: 35%;
+  min-height: 35%;
+  width: 100%;
+}
+.column-left .side-bar {
+
+  position: absolute;
+  bottom: 0px;
+
+  display: flex;
+  justify-content: center;
+
+  height: 200px;
+  width: 100%;
+
+  background-color: black;
+  opacity: 0.5;
+ 
+
+}
+
+
+.column-left .side-bar img{
+  height: 200px;
+  width: 200px;
+
+  font-weight: bold;
+}
+
+.column-left .side-bar p {
+  align-self: center;
+
+  width: auto;
+  height: auto;
+
+  font-size: 6rem;
+  font-weight: bold;
+  color: white;
+}
+
 
 /* SALES PITCH AND FORM */
 .column-right { 
