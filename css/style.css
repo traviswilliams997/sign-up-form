@@ -15,7 +15,7 @@ body {
     background-size: cover;
     width: 37%;
 }
-.column-left .container{
+.column-left .section-one{
   position: relative;
   
   height: 35%;
@@ -56,6 +56,34 @@ body {
   font-size: 6rem;
   font-weight: bold;
   color: white;
+}
+
+
+
+
+.column-left .section-two {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  height: 65%;
+  min-height: 65%;
+  width: 100%;
+
+}
+
+.column-left .section-two p{
+  position: absolute;
+  bottom: 0px;
+
+  height: auto;
+  width: auto;
+
+  font-size: 1.5rem;
+  color: white;
+
+
+
 }
 
 
@@ -245,6 +273,11 @@ input:not(:placeholder-shown):not(:focus):invalid {
 
   } 
 
+
+  a{
+    color: white;
+   }
+   
   
   
 
